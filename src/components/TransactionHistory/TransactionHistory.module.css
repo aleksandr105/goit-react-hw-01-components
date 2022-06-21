@@ -1,0 +1,27 @@
+.transaction_history{
+ border-collapse: collapse;
+ margin: 20px auto;
+ border-radius: 5px;
+ overflow: hidden;
+ outline: 1px solid #c8c8c8 ;
+}
+
+table th,
+table td {
+ width: 150px;
+ padding: 20px;
+ border: 1px solid #c8c8c8;
+}
+
+.transaction_history thead{
+ background-color: rgba(122, 182, 242, 0.981);
+ 
+}
+
+.transaction_history thead tr th {
+ color: white;
+}
+
+tbody tr:nth-child(2n){
+background-color: rgb(240, 240, 240);
+}

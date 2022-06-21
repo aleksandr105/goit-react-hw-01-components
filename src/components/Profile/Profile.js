@@ -24,15 +24,15 @@ export const Profile = ({
         <p className={css.location}>{location}</p>
       </div>
       <ul className={css.stats}>
-        <li>
+        <li className={css.item}>
           <span className={css.label}>Followers</span>
           <span className={css.quantity}> {followers}</span>
         </li>
-        <li>
+        <li className={css.item}>
           <span className={css.label}>Views</span>
           <span className={css.quantity}> {views}</span>
         </li>
-        <li>
+        <li className={css.item}>
           <span className={css.label}>Likes</span>
           <span className={css.quantity}> {likes}</span>
         </li>
@@ -41,21 +41,6 @@ export const Profile = ({
   );
 };
 
-// Profile.propTypes = {
-//   user: PropTypes.arrayOf(
-//     PropTypes.exact({
-//       avatar: PropTypes.string.isRequired,
-//       username: PropTypes.string.isRequired,
-//       tag: PropTypes.string.isRequired,
-//       location: PropTypes.string.isRequired,
-//       stats: {
-//         followers: PropTypes.number.isRequired,
-//         views: PropTypes.number.isRequired,
-//         likes: PropTypes.number.isRequired,
-//       },
-//     })
-//   ),
-// };
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
   username: PropTypes.string.isRequired,
